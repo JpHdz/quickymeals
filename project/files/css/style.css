@@ -1,0 +1,292 @@
+/* ========================================= */
+/* General styles */
+/* ========================================= */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  /* font-size: 10px; */
+
+  /* 10px / 16px = 0.625 = 62.5% */
+  /* Percentage of user's browser font-size setting */
+  font-size: 62.5%;
+}
+
+body {
+  line-height: 1;
+  font-weight: 400;
+  overflow-x: hidden;
+  font-family: 'Rubik', sans-serif;
+}
+/* ========================================= */
+/* Aux styles */
+/* ========================================= */
+.hidden {
+  display: none !important;
+}
+/* ========================================= */
+/* Header styles */
+/* ========================================= */
+.header-container {
+  padding: 3.2rem 6.4rem;
+  background-color: #f17221;
+  height: 12rem;
+  grid-template-columns: 1fr;
+  display: grid;
+  align-items: center;
+  width: 100%;
+  align-items: center;
+}
+.nav-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #fbfdfc;
+  font-weight: 600;
+  font-size: 1.8rem;
+}
+.icon-container {
+}
+
+.bar-container {
+  display: flex;
+  width: 25%;
+  background-color: #ec6a2e;
+  padding: 1.8rem;
+  border-radius: 8px;
+}
+.bar-container input {
+  outline: none;
+  height: 2rem;
+  width: 100%;
+  border: none;
+  background-color: transparent;
+  color: #fbfdfc;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+.bar-container input::placeholder {
+  color: #fbfdfc;
+}
+.links-container ul {
+  display: flex;
+  gap: 3.2rem;
+  list-style: none;
+}
+.links-container ul li {
+  display: flex;
+  align-items: center;
+
+  font-size: 1.6rem;
+}
+.links-container ul li a,
+.links-container ul li a:visited,
+.links-container ul li a:active {
+  display: flex;
+  gap: 1.2rem;
+  text-decoration: none;
+  color: #fbfdfc;
+}
+.full-btn {
+  background-color: #fbfdfc;
+  border-radius: 8px;
+  padding: 1.6rem 2.4rem;
+}
+.full-btn p {
+  color: #ec6a2e;
+}
+/* ========================================= */
+/* Main styles */
+/* ========================================= */
+.main-container {
+  position: relative;
+}
+.img-main-container {
+  width: 100%;
+  height: 87vh;
+}
+.img-main-container img {
+  width: 100%;
+  height: 100%;
+  filter: opacity();
+}
+.text-main-container {
+  position: absolute;
+  top: 24rem;
+  left: 16rem;
+  color: #fbfdfc;
+  font-size: 3rem;
+}
+.btn-main-explorar {
+  background-color: #ec6a2e;
+  border: none;
+  padding: 2.4rem 3.6rem;
+  border-radius: 8px;
+  color: #fbfdfc;
+  font-weight: 600;
+  font-size: 1.6rem;
+  margin-top: 3.2rem;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+}
+.icon-main-container {
+  position: absolute;
+  /* background-color: #ec6a2e; */
+  font-size: 3rem;
+  bottom: 4%;
+  left: 51%;
+  cursor: pointer;
+}
+/* ========================================= */
+/* Section content styles */
+/* ========================================= */
+
+.section-recipes-container {
+  margin-top: 8rem;
+  margin-bottom: 4.8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.recipes-container {
+  display: flex;
+  margin: 0 6.8rem;
+  align-items: center;
+  gap: 2.4rem;
+  padding-bottom: 1.4rem;
+  width: 90%;
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+.section-title {
+  font-size: 3rem;
+  margin-bottom: 2.4rem;
+  margin-left: 6.8rem;
+  align-self: flex-start;
+}
+/* ========================================= */
+/*  Card styles */
+/* ========================================= */
+.recipe-card {
+  min-width: 36rem;
+  /* overflow: hidden; */
+  cursor: pointer;
+  border-radius: 8px 8px;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  transition: all 0.2s;
+}
+.recipe-card:hover {
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.1);
+}
+.card-img {
+  overflow: hidden;
+  border-radius: 8px 8px 0 0;
+}
+
+.card-img img {
+  overflow: hidden;
+  width: 100%;
+  transition: all 0.25s;
+}
+.recipe-card img:hover {
+  transform: scale(1.025);
+}
+.card-description {
+  padding: 0 2.4rem;
+  position: relative;
+}
+.card-chef-name {
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+  text-align: center;
+  color: #6c757d;
+  margin-bottom: 2.4rem;
+  display: block;
+  text-decoration: none;
+}
+.card-recipe-name {
+  font-size: 2.4rem;
+  margin-bottom: 3.2rem;
+}
+.card-recipe-summary {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  margin-bottom: 4.8rem;
+  position: relative;
+}
+.card-recipe-summary li {
+  list-style: none;
+  font-size: 1.4rem;
+}
+.card-recipe-summary li p i {
+  margin-right: 1.2rem;
+}
+.card-more-info {
+  position: absolute;
+  top: 3.8rem;
+  right: 2.4rem;
+  font-size: 1.6rem;
+  width: 2.4rem;
+  text-align: center;
+}
+.more-info-side {
+  position: absolute;
+  width: 26rem;
+  box-shadow: 0 2.4rem 4.8rem rgba(54, 52, 52, 0.05);
+  top: 5rem;
+  right: -23rem;
+  z-index: 100;
+  background-color: #f9c7a6;
+  border-radius: 8px;
+}
+.more-info-side ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  justify-items: center;
+  justify-content: center;
+}
+.more-info-side li {
+  display: flex;
+  justify-content: start;
+  height: 3.2rem;
+  align-content: center;
+  padding: 1.2rem;
+}
+.more-info-side li p {
+  align-self: center;
+}
+.more-info-side li p i {
+  margin-right: 1.6rem;
+}
+.more-info-side li:hover {
+  background-color: rgba(236, 106, 46, 0.25);
+}
+.btn-next-recipes,
+.btn-previous-recipes {
+  position: absolute;
+  align-self: center;
+
+  width: 2.4rem;
+  padding: 1.2rem;
+  text-align: center;
+  cursor: pointer;
+  font-size: 2.4rem;
+  /* background-color: rgba(54, 52, 52, 0.15); */
+  border-radius: 100%;
+  z-index: 100;
+}
+.btn-next-recipes {
+  right: 6.6rem;
+}
+.btn-previous-recipes {
+  left: 5.6rem;
+}
+
+/* ========================================= */
+/*  Carousel icons styles */
+/* ========================================= */

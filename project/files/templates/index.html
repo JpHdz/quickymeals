@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script
+      defer
+      src="https://kit.fontawesome.com/f198221260.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../js/script.js" defer></script>
+    <title>QuickyMeals</title>
+  </head>
+  <body>
+    <!-- =========================================== -->
+    <!-- Header section-->
+    <!-- =========================================== -->
+    <header class="header-container">
+      <nav class="nav-container">
+        <div class="icon-container"><p>QuickyMeals.com</p></div>
+        <div class="bar-container">
+          <input
+            type="text"
+            name="search-bar"
+            id="search-bar"
+            placeholder="Empieza a buscar recetas"
+          />
+          <div class="bar-icon">
+            <i class="fa-solid fa-magnifying-glass" style="color: #fbfdfc"></i>
+          </div>
+        </div>
+        <div class="links-container">
+          <ul>
+            <li>
+              <a href="">
+                <i class="fa-solid fa-chevron-down" style="color: #fbfdfc"></i>
+                <p>Explorar</p>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <p>Sobre nosotros</p>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <p>Aprende</p>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <i class="fa-solid fa-plus" style="color: #fbfdfc"></i>
+                <p>Subir receta</p>
+              </a>
+            </li>
+            <li>
+              <a href="" class="full-btn">
+                <p>Unete</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!-- =========================================== -->
+    <!-- Main section-->
+    <!-- =========================================== -->
+    <main class="main-container">
+      <div class="img-main-container">
+        <img src="../src/imgs/orange-background.png" alt="imagen main" />
+      </div>
+      <div class="text-main-container">
+        <h1>
+          Un mundo de recetas, <br />
+          en un solo lugar.
+        </h1>
+        <a href="#" class="btn-main-explorar">Empieza a explorar</a>
+      </div>
+      <div class="icon-main-container">
+        <i class="fa-solid fa-chevron-down" style="color: #fbfdfc"></i>
+      </div>
+    </main>
+    <!-- =========================================== -->
+    <!-- Content section-->
+    <!-- =========================================== -->
+    <section class="content-container">
+      <!-- =========================================== -->
+      <!-- Recipes section 1-->
+      <!-- =========================================== -->
+      <section
+        class="section-recipes-container popular-section-recipes-container"
+      >
+        <h3 class="section-title">Recetas mas populares</h3>
+        <div
+          class="recipes-container popular-recipes-container"
+          data-section="1"
+        >
+          <div class="recipe-card popular-recipe-card">
+            <div class="card-img">
+              <img
+                src="../src/imgs/pancakes.jpg"
+                alt="imagen de unos deliciosos pancakes"
+              />
+            </div>
+            <div class="card-description">
+              <a href="#" class="card-chef-name">Juan Pablo Hernandez</a>
+              <h3 class="card-recipe-name">Pancakes con tocino</h3>
+              <ul class="card-recipe-summary">
+                <li class="card-rating">
+                  <p>
+                    <i class="fa-regular fa-star" style="color: #ec6a2e"></i>
+                    Rating: <span class="span-rating">5.0</span>
+                  </p>
+                </li>
+                <li class="card-time">
+                  <p>
+                    <i
+                      class="fa-regular fa-hourglass"
+                      style="color: #ec6a2e"
+                    ></i>
+                    Tiempo de preparacion:
+                    <span class="span-time"> 15:00 min</span>
+                  </p>
+                </li>
+                <li class="card-difficulty">
+                  <p>
+                    <i
+                      class="fa-regular fa-lightbulb"
+                      style="color: #ec6a2e"
+                    ></i
+                    >Dificultad: <span class="span-difficulty">Facil</span>
+                  </p>
+                </li>
+              </ul>
+              <div class="card-more-info" data-cardvalue="1">
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+                <div class="more-info-side hidden" data-cardvalue="1">
+                  <ul>
+                    <li>
+                      <p>
+                        <i class="fa-solid fa-floppy-disk"></i>Guardar para ver
+                        mas tarde
+                      </p>
+                    </li>
+                    <li>
+                      <p><i class="fa-solid fa-share"></i>Compartir</p>
+                    </li>
+                    <li>
+                      <p>
+                        <i class="fa-solid fa-bookmark"></i>Guardar en una
+                        coleccion
+                      </p>
+                    </li>
+                    <li>
+                      <p><i class="fa-solid fa-exclamation"></i>Denunciar</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="recipe-card popular-recipe-card">
+            <div class="card-img">
+              <img
+                src="../src/imgs/pancakes.jpg"
+                alt="imagen de unos deliciosos pancakes"
+              />
+            </div>
+            <div class="card-description">
+              <a href="#" class="card-chef-name">Juan Pablo Hernandez</a>
+              <h3 class="card-recipe-name">Pancakes con tocino</h3>
+              <ul class="card-recipe-summary">
+                <li class="card-rating">
+                  <p>
+                    <i class="fa-regular fa-star" style="color: #ec6a2e"></i>
+                    Rating: <span class="span-rating">5.0</span>
+                  </p>
+                </li>
+                <li class="card-time">
+                  <p>
+                    <i
+                      class="fa-regular fa-hourglass"
+                      style="color: #ec6a2e"
+                    ></i>
+                    Tiempo de preparacion:
+                    <span class="span-time"> 15:00 min</span>
+                  </p>
+                </li>
+                <li class="card-difficulty">
+                  <p>
+                    <i
+                      class="fa-regular fa-lightbulb"
+                      style="color: #ec6a2e"
+                    ></i
+                    >Dificultad: <span class="span-difficulty">Facil</span>
+                  </p>
+                </li>
+              </ul>
+              <div class="card-more-info" data-cardvalue="2">
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+                <div class="more-info-side hidden" data-cardvalue="2">
+                  <ul>
+                    <li>
+                      <p>
+                        <i class="fa-solid fa-floppy-disk"></i>Guardar para ver
+                        mas tarde
+                      </p>
+                    </li>
+                    <li>
+                      <p><i class="fa-solid fa-share"></i>Compartir</p>
+                    </li>
+                    <li>
+                      <p>
+                        <i class="fa-solid fa-bookmark"></i>Guardar en una
+                        coleccion
+                      </p>
+                    </li>
+                    <li>
+                      <p><i class="fa-solid fa-exclamation"></i>Denunciar</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="recipe-card popular-recipe-card">
+            <div class="card-img">
+              <img
+                src="../src/imgs/pancakes.jpg"
+                alt="imagen de unos deliciosos pancakes"
+              />
+            </div>
+            <div class="card-description">
+              <a href="#" class="card-chef-name">Juan Pablo Hernandez</a>
+              <h3 class="card-recipe-name">Pancakes con tocino</h3>
+              <ul class="card-recipe-summary">
+                <li class="card-rating">
+                  <p>
+                    <i class="fa-regular fa-star" style="color: #ec6a2e"></i>
+                    Rating: <span class="span-rating">5.0</span>
+                  </p>
+                </li>
+                <li class="card-time">
+                  <p>
+                    <i
+                      class="fa-regular fa-hourglass"
+                      style="color: #ec6a2e"
+                    ></i>
+                    Tiempo de preparacion:
+                    <span class="span-time"> 15:00 min</span>
+                  </p>
+                </li>
+                <li class="card-difficulty">
+                  <p>
+                    <i
+                      class="fa-regular fa-lightbulb"
+                      style="color: #ec6a2e"
+                    ></i
+                    >Dificultad: <span class="span-difficulty">Facil</span>
+                  </p>
+                </li>
+              </ul>
+              <div class="card-more-info" data-cardvalue="3">
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+                <div class="more-info-side hidden" data-cardvalue="3">
+                  <ul>
+                    <li>
+                      <p>
+                        <i class="fa-solid fa-floppy-disk"></i>Guardar para ver
+                        mas tarde
+                      </p>
+                    </li>
+                    <li>
+                      <p><i class="fa-solid fa-share"></i>Compartir</p>
+                    </li>
+                    <li>
+                      <p>
+                        <i class="fa-solid fa-bookmark"></i>Guardar en una
+                        coleccion
+                      </p>
+                    </li>
+                    <li>
+                      <p><i class="fa-solid fa-exclamation"></i>Denunciar</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="recipe-card popular-recipe-card">
+            <div class="card-img">
+              <img
+                src="../src/imgs/pancakes.jpg"
+                alt="imagen de unos deliciosos pancakes"
+              />
+            </div>
+            <div class="card-description">
+              <a href="#" class="card-chef-name">Juan Pablo Hernandez</a>
+              <h3 class="card-recipe-name">Pancakes con tocino</h3>
+              <ul class="card-recipe-summary">
+                <li class="card-rating">
+                  <p>
+                    <i class="fa-regular fa-star" style="color: #ec6a2e"></i>
+                    Rating: <span class="span-rating">5.0</span>
+                  </p>
+                </li>
+                <li class="card-time">
+                  <p>
+                    <i
+                      class="fa-regular fa-hourglass"
+                      style="color: #ec6a2e"
+                    ></i>
+                    Tiempo de preparacion:
+                    <span class="span-time"> 15:00 min</span>
+                  </p>
+                </li>
+                <li class="card-difficulty">
+                  <p>
+                    <i
+                      class="fa-regular fa-lightbulb"
+                      style="color: #ec6a2e"
+                    ></i
+                    >Dificultad: <span class="span-difficulty">Facil</span>
+                  </p>
+                </li>
+              </ul>
+              <div class="card-more-info" data-cardvalue="4">
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+                <div class="more-info-side hidden" data-cardvalue="4">
+                  <ul>
+                    <li>
+                      <p>
+                        <i class="fa-solid fa-floppy-disk"></i>Guardar para ver
+                        mas tarde
+                      </p>
+                    </li>
+                    <li>
+                      <p><i class="fa-solid fa-share"></i>Compartir</p>
+                    </li>
+                    <li>
+                      <p>
+                        <i class="fa-solid fa-bookmark"></i>Guardar en una
+                        coleccion
+                      </p>
+                    </li>
+                    <li>
+                      <p><i class="fa-solid fa-exclamation"></i>Denunciar</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="recipe-card popular-recipe-card">
+            <div class="card-img">
+              <img
+                src="../src/imgs/pancakes.jpg"
+                alt="imagen de unos deliciosos pancakes"
+              />
+            </div>
+            <div class="card-description">
+              <a href="#" class="card-chef-name">Juan Pablo Hernandez</a>
+              <h3 class="card-recipe-name">Pancakes con tocino</h3>
+              <ul class="card-recipe-summary">
+                <li class="card-rating">
+                  <p>
+                    <i class="fa-regular fa-star" style="color: #ec6a2e"></i>
+                    Rating: <span class="span-rating">5.0</span>
+                  </p>
+                </li>
+                <li class="card-time">
+                  <p>
+                    <i
+                      class="fa-regular fa-hourglass"
+                      style="color: #ec6a2e"
+                    ></i>
+                    Tiempo de preparacion:
+                    <span class="span-time"> 15:00 min</span>
+                  </p>
+                </li>
+                <li class="card-difficulty">
+                  <p>
+                    <i
+                      class="fa-regular fa-lightbulb"
+                      style="color: #ec6a2e"
+                    ></i
+                    >Dificultad: <span class="span-difficulty">Facil</span>
+                  </p>
+                </li>
+              </ul>
+              <div class="card-more-info" data-cardvalue="5">
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+                <div class="more-info-side hidden" data-cardvalue="5">
+                  <ul>
+                    <li>
+                      <p>
+                        <i class="fa-solid fa-floppy-disk"></i>Guardar para ver
+                        mas tarde
+                      </p>
+                    </li>
+                    <li>
+                      <p><i class="fa-solid fa-share"></i>Compartir</p>
+                    </li>
+                    <li>
+                      <p>
+                        <i class="fa-solid fa-bookmark"></i>Guardar en una
+                        coleccion
+                      </p>
+                    </li>
+                    <li>
+                      <p><i class="fa-solid fa-exclamation"></i>Denunciar</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="recipe-card popular-recipe-card">
+            <div class="card-img">
+              <img
+                src="../src/imgs/pancakes.jpg"
+                alt="imagen de unos deliciosos pancakes"
+              />
+            </div>
+            <div class="card-description">
+              <a href="#" class="card-chef-name">Juan Pablo Hernandez</a>
+              <h3 class="card-recipe-name">Pancakes con tocino</h3>
+              <ul class="card-recipe-summary">
+                <li class="card-rating">
+                  <p>
+                    <i class="fa-regular fa-star" style="color: #ec6a2e"></i>
+                    Rating: <span class="span-rating">5.0</span>
+                  </p>
+                </li>
+                <li class="card-time">
+                  <p>
+                    <i
+                      class="fa-regular fa-hourglass"
+                      style="color: #ec6a2e"
+                    ></i>
+                    Tiempo de preparacion:
+                    <span class="span-time"> 15:00 min</span>
+                  </p>
+                </li>
+                <li class="card-difficulty">
+                  <p>
+                    <i
+                      class="fa-regular fa-lightbulb"
+                      style="color: #ec6a2e"
+                    ></i
+                    >Dificultad: <span class="span-difficulty">Facil</span>
+                  </p>
+                </li>
+              </ul>
+              <div class="card-more-info" data-cardvalue="6">
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+                <div class="more-info-side hidden" data-cardvalue="6">
+                  <ul>
+                    <li>
+                      <p>
+                        <i class="fa-solid fa-floppy-disk"></i>Guardar para ver
+                        mas tarde
+                      </p>
+                    </li>
+                    <li>
+                      <p><i class="fa-solid fa-share"></i>Compartir</p>
+                    </li>
+                    <li>
+                      <p>
+                        <i class="fa-solid fa-bookmark"></i>Guardar en una
+                        coleccion
+                      </p>
+                    </li>
+                    <li>
+                      <p><i class="fa-solid fa-exclamation"></i>Denunciar</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="btn-next-recipes" data-section="1">
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+          <div class="btn-previous-recipes" data-section="1">
+            <i class="fa-solid fa-chevron-left"></i>
+          </div>
+        </div>
+      </section>
+      <!-- =========================================== -->
+      <!-- Recipes section 2-->
+      <!-- =========================================== -->
+      <section
+        class="section-recipes-container vegan-section-recipes-container"
+      >
+        <h3 class="section-title">Recetas veganas</h3>
+        <div class="recipes-container vegan-recipes-container" data-section="2">
+          <div class="recipe-card popular-recipe-card">
+            <div class="card-img">
+              <img
+                src="../src/imgs/pancakes.jpg"
+                alt="imagen de unos deliciosos pancakes"
+              />
+            </div>
+            <div class="card-description">
+              <a href="#" class="card-chef-name">Juan Pablo Hernandez</a>
+              <h3 class="card-recipe-name">Pancakes con tocino</h3>
+              <ul class="card-recipe-summary">
+                <li class="card-rating">
+                  <p>
+                    <i class="fa-regular fa-star" style="color: #ec6a2e"></i>
+                    Rating: <span class="span-rating">5.0</span>
+                  </p>
+                </li>
+                <li class="card-time">
+                  <p>
+                    <i
+                      class="fa-regular fa-hourglass"
+                      style="color: #ec6a2e"
+                    ></i>
+                    Tiempo de preparacion:
+                    <span class="span-time"> 15:00 min</span>
+                  </p>
+                </li>
+                <li class="card-difficulty">
+                  <p>
+                    <i
+                      class="fa-regular fa-lightbulb"
+                      style="color: #ec6a2e"
+                    ></i
+                    >Dificultad: <span class="span-difficulty">Facil</span>
+                  </p>
+                </li>
+              </ul>
+              <div class="card-more-info" data-cardvalue="7">
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+                <div class="more-info-side hidden" data-cardvalue="7">
+                  <ul>
+                    <li>
+                      <p>
+                        <i class="fa-solid fa-floppy-disk"></i>Guardar para ver
+                        mas tarde
+                      </p>
+                    </li>
+                    <li>
+                      <p><i class="fa-solid fa-share"></i>Compartir</p>
+                    </li>
+                    <li>
+                      <p>
+                        <i class="fa-solid fa-bookmark"></i>Guardar en una
+                        coleccion
+                      </p>
+                    </li>
+                    <li>
+                      <p><i class="fa-solid fa-exclamation"></i>Denunciar</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="recipe-card popular-recipe-card">
+            <div class="card-img">
+              <img
+                src="../src/imgs/pancakes.jpg"
+                alt="imagen de unos deliciosos pancakes"
+              />
+            </div>
+            <div class="card-description">
+              <a href="#" class="card-chef-name">Juan Pablo Hernandez</a>
+              <h3 class="card-recipe-name">Pancakes con tocino</h3>
+              <ul class="card-recipe-summary">
+                <li class="card-rating">
+                  <p>
+                    <i class="fa-regular fa-star" style="color: #ec6a2e"></i>
+                    Rating: <span class="span-rating">5.0</span>
+                  </p>
+                </li>
+                <li class="card-time">
+                  <p>
+                    <i
+                      class="fa-regular fa-hourglass"
+                      style="color: #ec6a2e"
+                    ></i>
+                    Tiempo de preparacion:
+                    <span class="span-time"> 15:00 min</span>
+                  </p>
+                </li>
+                <li class="card-difficulty">
+                  <p>
+                    <i
+                      class="fa-regular fa-lightbulb"
+                      style="color: #ec6a2e"
+                    ></i
+                    >Dificultad: <span class="span-difficulty">Facil</span>
+                  </p>
+                </li>
+              </ul>
+              <div class="card-more-info" data-cardvalue="8">
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+                <div class="more-info-side hidden" data-cardvalue="8">
+                  <ul>
+                    <li>
+                      <p>
+                        <i class="fa-solid fa-floppy-disk"></i>Guardar para ver
+                        mas tarde
+                      </p>
+                    </li>
+                    <li>
+                      <p><i class="fa-solid fa-share"></i>Compartir</p>
+                    </li>
+                    <li>
+                      <p>
+                        <i class="fa-solid fa-bookmark"></i>Guardar en una
+                        coleccion
+                      </p>
+                    </li>
+                    <li>
+                      <p><i class="fa-solid fa-exclamation"></i>Denunciar</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="recipe-card popular-recipe-card">
+            <div class="card-img">
+              <img
+                src="../src/imgs/pancakes.jpg"
+                alt="imagen de unos deliciosos pancakes"
+              />
+            </div>
+            <div class="card-description">
+              <a href="#" class="card-chef-name">Juan Pablo Hernandez</a>
+              <h3 class="card-recipe-name">Pancakes con tocino</h3>
+              <ul class="card-recipe-summary">
+                <li class="card-rating">
+                  <p>
+                    <i class="fa-regular fa-star" style="color: #ec6a2e"></i>
+                    Rating: <span class="span-rating">5.0</span>
+                  </p>
+                </li>
+                <li class="card-time">
+                  <p>
+                    <i
+                      class="fa-regular fa-hourglass"
+                      style="color: #ec6a2e"
+                    ></i>
+                    Tiempo de preparacion:
+                    <span class="span-time"> 15:00 min</span>
+                  </p>
+                </li>
+                <li class="card-difficulty">
+                  <p>
+                    <i
+                      class="fa-regular fa-lightbulb"
+                      style="color: #ec6a2e"
+                    ></i
+                    >Dificultad: <span class="span-difficulty">Facil</span>
+                  </p>
+                </li>
+              </ul>
+              <div class="card-more-info" data-cardvalue="9">
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+                <div class="more-info-side hidden" data-cardvalue="9">
+                  <ul>
+                    <li>
+                      <p>
+                        <i class="fa-solid fa-floppy-disk"></i>Guardar para ver
+                        mas tarde
+                      </p>
+                    </li>
+                    <li>
+                      <p><i class="fa-solid fa-share"></i>Compartir</p>
+                    </li>
+                    <li>
+                      <p>
+                        <i class="fa-solid fa-bookmark"></i>Guardar en una
+                        coleccion
+                      </p>
+                    </li>
+                    <li>
+                      <p><i class="fa-solid fa-exclamation"></i>Denunciar</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="recipe-card popular-recipe-card">
+            <div class="card-img">
+              <img
+                src="../src/imgs/pancakes.jpg"
+                alt="imagen de unos deliciosos pancakes"
+              />
+            </div>
+            <div class="card-description">
+              <a href="#" class="card-chef-name">Juan Pablo Hernandez</a>
+              <h3 class="card-recipe-name">Pancakes con tocino</h3>
+              <ul class="card-recipe-summary">
+                <li class="card-rating">
+                  <p>
+                    <i class="fa-regular fa-star" style="color: #ec6a2e"></i>
+                    Rating: <span class="span-rating">5.0</span>
+                  </p>
+                </li>
+                <li class="card-time">
+                  <p>
+                    <i
+                      class="fa-regular fa-hourglass"
+                      style="color: #ec6a2e"
+                    ></i>
+                    Tiempo de preparacion:
+                    <span class="span-time"> 15:00 min</span>
+                  </p>
+                </li>
+                <li class="card-difficulty">
+                  <p>
+                    <i
+                      class="fa-regular fa-lightbulb"
+                      style="color: #ec6a2e"
+                    ></i
+                    >Dificultad: <span class="span-difficulty">Facil</span>
+                  </p>
+                </li>
+              </ul>
+              <div class="card-more-info" data-cardvalue="10">
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+                <div class="more-info-side hidden" data-cardvalue="10">
+                  <ul>
+                    <li>
+                      <p>
+                        <i class="fa-solid fa-floppy-disk"></i>Guardar para ver
+                        mas tarde
+                      </p>
+                    </li>
+                    <li>
+                      <p><i class="fa-solid fa-share"></i>Compartir</p>
+                    </li>
+                    <li>
+                      <p>
+                        <i class="fa-solid fa-bookmark"></i>Guardar en una
+                        coleccion
+                      </p>
+                    </li>
+                    <li>
+                      <p><i class="fa-solid fa-exclamation"></i>Denunciar</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="recipe-card popular-recipe-card">
+            <div class="card-img">
+              <img
+                src="../src/imgs/pancakes.jpg"
+                alt="imagen de unos deliciosos pancakes"
+              />
+            </div>
+            <div class="card-description">
+              <a href="#" class="card-chef-name">Juan Pablo Hernandez</a>
+              <h3 class="card-recipe-name">Pancakes con tocino</h3>
+              <ul class="card-recipe-summary">
+                <li class="card-rating">
+                  <p>
+                    <i class="fa-regular fa-star" style="color: #ec6a2e"></i>
+                    Rating: <span class="span-rating">5.0</span>
+                  </p>
+                </li>
+                <li class="card-time">
+                  <p>
+                    <i
+                      class="fa-regular fa-hourglass"
+                      style="color: #ec6a2e"
+                    ></i>
+                    Tiempo de preparacion:
+                    <span class="span-time"> 15:00 min</span>
+                  </p>
+                </li>
+                <li class="card-difficulty">
+                  <p>
+                    <i
+                      class="fa-regular fa-lightbulb"
+                      style="color: #ec6a2e"
+                    ></i
+                    >Dificultad: <span class="span-difficulty">Facil</span>
+                  </p>
+                </li>
+              </ul>
+              <div class="card-more-info" data-cardvalue="11">
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+                <div class="more-info-side hidden" data-cardvalue="11">
+                  <ul>
+                    <li>
+                      <p>
+                        <i class="fa-solid fa-floppy-disk"></i>Guardar para ver
+                        mas tarde
+                      </p>
+                    </li>
+                    <li>
+                      <p><i class="fa-solid fa-share"></i>Compartir</p>
+                    </li>
+                    <li>
+                      <p>
+                        <i class="fa-solid fa-bookmark"></i>Guardar en una
+                        coleccion
+                      </p>
+                    </li>
+                    <li>
+                      <p><i class="fa-solid fa-exclamation"></i>Denunciar</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="recipe-card popular-recipe-card">
+            <div class="card-img">
+              <img
+                src="../src/imgs/pancakes.jpg"
+                alt="imagen de unos deliciosos pancakes"
+              />
+            </div>
+            <div class="card-description">
+              <a href="#" class="card-chef-name">Juan Pablo Hernandez</a>
+              <h3 class="card-recipe-name">Pancakes con tocino</h3>
+              <ul class="card-recipe-summary">
+                <li class="card-rating">
+                  <p>
+                    <i class="fa-regular fa-star" style="color: #ec6a2e"></i>
+                    Rating: <span class="span-rating">5.0</span>
+                  </p>
+                </li>
+                <li class="card-time">
+                  <p>
+                    <i
+                      class="fa-regular fa-hourglass"
+                      style="color: #ec6a2e"
+                    ></i>
+                    Tiempo de preparacion:
+                    <span class="span-time"> 15:00 min</span>
+                  </p>
+                </li>
+                <li class="card-difficulty">
+                  <p>
+                    <i
+                      class="fa-regular fa-lightbulb"
+                      style="color: #ec6a2e"
+                    ></i
+                    >Dificultad: <span class="span-difficulty">Facil</span>
+                  </p>
+                </li>
+              </ul>
+              <div class="card-more-info" data-cardvalue="12">
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+                <div class="more-info-side hidden" data-cardvalue="12">
+                  <ul>
+                    <li>
+                      <p>
+                        <i class="fa-solid fa-floppy-disk"></i>Guardar para ver
+                        mas tarde
+                      </p>
+                    </li>
+                    <li>
+                      <p><i class="fa-solid fa-share"></i>Compartir</p>
+                    </li>
+                    <li>
+                      <p>
+                        <i class="fa-solid fa-bookmark"></i>Guardar en una
+                        coleccion
+                      </p>
+                    </li>
+                    <li>
+                      <p><i class="fa-solid fa-exclamation"></i>Denunciar</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="btn-next-recipes" data-section="2">
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+          <div class="btn-previous-recipes" data-section="2">
+            <i class="fa-solid fa-chevron-left"></i>
+          </div>
+        </div>
+      </section>
+      <section class="section-icons-categories">
+        <div class="icons-categorias-container">
+          <div class="icon-categoria"></div>
+        </div>
+      </section>
+    </section>
+  </body>
+</html>

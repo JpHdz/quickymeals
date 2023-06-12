@@ -1,0 +1,11 @@
+Tints:
+#ffe8cc
+#ffd8a8
+#ffc078
+#fff4e6
+
+Shades:
+#ff922b
+#fd7e14
+#ffa94d
+#f76707
