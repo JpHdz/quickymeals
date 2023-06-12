@@ -1,5 +1,9 @@
 'use strict';
 
+const btnStartExploring = document.querySelector('.btn-main-explorar');
+const iconStartExploring = document.querySelector('.icon-main-container');
+const mainContent = document.querySelector('.content-container');
+
 const btnsMoreInfoSide = document.querySelectorAll('.card-more-info');
 const elsIndoSide = document.querySelectorAll('.more-info-side');
 const iconsTreeDots = document.querySelectorAll('.fa-ellipsis-vertical');
@@ -7,12 +11,24 @@ const iconsTreeDots = document.querySelectorAll('.fa-ellipsis-vertical');
 // const btnPreviousRecipesScroll = document.querySelector(
 // '.btn-previous-recipes'
 // );
-
 // const elPopularContainer = document.querySelector('.popular-recipes-container');
 const recipesContainers = document.querySelectorAll('.recipes-container');
 const btnsNextRecipes = document.querySelectorAll('.btn-next-recipes');
 const btnsPreviousRecipes = document.querySelectorAll('.btn-previous-recipes');
 
+const carouselItem = document.querySelectorAll('.carousel-item');
+
+// =================================================== //
+// Hero main section //
+// =================================================== //
+
+const scrollToContent = (e) => {
+  console.log('a');
+  mainContent.scrollIntoView({ behavior: 'smooth' });
+};
+
+btnStartExploring.addEventListener('click', scrollToContent);
+iconStartExploring.addEventListener('click', scrollToContent);
 // =================================================== //
 // Scroll recipes carousel //
 // =================================================== //
@@ -52,6 +68,7 @@ const btnsPreviousRecipes = document.querySelectorAll('.btn-previous-recipes');
 //
 //Dinamica
 //
+
 let hoveringData = null;
 const nextRecipes = (container) => {
   container.scrollLeft += container.offsetWidth;
@@ -131,5 +148,7 @@ document.addEventListener('click', (e) => {
 });
 
 // =================================================== //
-// JS icons carousel //
+// JS Carousel Promo //
 // =================================================== //
+
+carouselItem[0].classList.add('active');

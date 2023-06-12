@@ -13,7 +13,9 @@ html {
   /* Percentage of user's browser font-size setting */
   font-size: 62.5%;
 }
-
+p {
+  margin-bottom: 0;
+}
 body {
   line-height: 1;
   font-weight: 400;
@@ -30,9 +32,9 @@ body {
 /* Header styles */
 /* ========================================= */
 .header-container {
-  padding: 3.2rem 6.4rem;
+  padding: 2rem 6.4rem;
   background-color: #f17221;
-  height: 12rem;
+
   grid-template-columns: 1fr;
   display: grid;
   align-items: center;
@@ -74,6 +76,7 @@ body {
   display: flex;
   gap: 3.2rem;
   list-style: none;
+  margin-bottom: 0;
 }
 .links-container ul li {
   display: flex;
@@ -105,7 +108,7 @@ body {
 }
 .img-main-container {
   width: 100%;
-  height: 87vh;
+  height: 90vh;
 }
 .img-main-container img {
   width: 100%;
@@ -131,6 +134,11 @@ body {
   cursor: pointer;
   text-decoration: none;
   display: inline-block;
+  transition: all 0.4s;
+}
+.btn-main-explorar:hover {
+  background-color: #d65f28;
+  color: white;
 }
 .icon-main-container {
   position: absolute;
@@ -145,7 +153,7 @@ body {
 /* ========================================= */
 
 .section-recipes-container {
-  margin-top: 8rem;
+  margin-top: 12rem;
   margin-bottom: 4.8rem;
   display: flex;
   flex-direction: column;
@@ -161,10 +169,25 @@ body {
   overflow: hidden;
   scroll-behavior: smooth;
 }
+.section-top-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+}
+.see-everything {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  font-size: 1.4rem;
+}
+.see-everything a {
+  text-decoration: none;
+  color: black;
+}
 .section-title {
   font-size: 3rem;
   margin-bottom: 2.4rem;
-  margin-left: 6.8rem;
   align-self: flex-start;
 }
 /* ========================================= */
@@ -184,6 +207,9 @@ body {
 .card-img {
   overflow: hidden;
   border-radius: 8px 8px 0 0;
+  /* height: 22rem; */
+  width: 36rem;
+  height: 22rem;
 }
 
 .card-img img {
@@ -288,5 +314,182 @@ body {
 }
 
 /* ========================================= */
-/*  Carousel icons styles */
+/*  Section fav promo */
 /* ========================================= */
+.promo-fav-section {
+  display: flex;
+  width: 95%;
+  flex-direction: column;
+  align-content: center;
+  margin: 0 auto;
+}
+.carousel-item {
+  height: 60rem;
+}
+.carousel-item img {
+  margin-top: -30rem;
+  filter: opacity(0.9);
+}
+.promo-fav-section h3 {
+  font-size: 3rem;
+  margin-bottom: 1.2rem;
+}
+.promo-fav-section a {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  background-color: #ec6a2e;
+  padding: 1.2rem 1.6rem;
+  margin-top: 1.2rem;
+}
+
+.info-fav-recipe {
+  z-index: 100;
+  position: absolute;
+  color: white;
+  /* right: -15%;
+  bottom: -15%; */
+  right: 8%;
+  bottom: 8%;
+  transition: all 1s;
+}
+.carousel-item:hover > .info-fav-recipe {
+  /* right: 8%;
+  bottom: 8%; */
+}
+
+.icon-categoria {
+  display: block;
+}
+.section-icons-categories {
+  margin-top: 9.6rem;
+  margin-bottom: -4.8rem;
+  display: flex;
+  flex-direction: column;
+}
+.icons-categorias-container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  /* gap: 2.4rem; */
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  width: 60%;
+  margin: 0 auto;
+}
+.icon-categoria {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #d9d9d9;
+  height: 9.6rem;
+  width: 9.6rem;
+  border-radius: 100%;
+}
+.icon-categoria img {
+  width: 60%;
+  align-self: center;
+}
+
+/* ========================================= */
+/* Drink promo section */
+/* ========================================= */
+
+.section-promo-bebidas-container {
+  display: grid;
+  grid-template-columns: 5fr 1fr 1fr 1fr 1fr;
+  width: 90%;
+  margin: 0 auto;
+}
+.txt-drinks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #f381aa;
+  color: #fbfdfc;
+  font-weight: 500;
+  letter-spacing: 0.2rem;
+}
+.txt-drinks p {
+  font-size: 1.4rem;
+  margin-bottom: 0.4rem;
+}
+.txt-drinks h4 {
+  font-size: 3.6rem;
+  font-weight: 600;
+  margin-bottom: 1.8rem;
+  letter-spacing: 0.4rem;
+}
+.txt-drinks button {
+  padding: 1.2rem 1.6rem;
+  border-radius: 8px;
+  outline: none;
+  font-size: 1.2rem;
+  border: none;
+  transition: all 0.4s;
+}
+.txt-drinks button:hover {
+  background-color: #fbfdfc;
+}
+.img-drink {
+  width: 100%;
+}
+.img-drink-purple {
+  background-color: #ad55f2;
+}
+.img-drink-yellow {
+  background-color: #f2d955;
+}
+.img-drink-orange {
+  background-color: #f28d55;
+}
+.img-drink-blue {
+  background-color: #55baf2;
+}
+.footer {
+  margin-top: 9.2rem;
+  padding: 9.2rem 9.2rem;
+  background-color: #f17221;
+  color: #fff;
+}
+.footer-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr 2fr;
+  /* align-items: center; */
+  justify-items: center;
+}
+.footer-logo-section a {
+  text-decoration: none;
+  color: #fff;
+}
+.footer-logo-section h4 {
+  font-size: 2.4rem;
+}
+.footer-pages-sections h4,
+.footer-thanks-section h4 {
+  font-size: 1.8rem;
+  margin-bottom: 1.4rem;
+}
+.footer-pages,
+.footer-thanks {
+  font-size: 1.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.footer-pages a,
+.footer-thanks a {
+  text-decoration: none;
+  color: #e2e2e2;
+}
+.footer-social {
+  display: flex;
+  gap: 2.4rem;
+  font-size: 2.4rem;
+}
+.footer-social a {
+  text-decoration: none;
+  color: #fff;
+}

@@ -1,0 +1,113 @@
+.login-template {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100vh;
+  overflow: hidden;
+}
+.login-img-container img {
+  width: 100%;
+  margin-top: -15rem;
+}
+
+.login-section {
+  padding: 4.28em;
+}
+/* ================================ */
+/* Sign-up styles */
+/* ================================ */
+
+.qm-login-logo {
+  font-size: 2.4rem;
+  margin-bottom: 20rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+.qm-login-logo a {
+  text-decoration: none;
+  color: black;
+}
+.sign-up-content {
+  width: 45rem;
+  margin: 0 auto;
+}
+.top-sign-up-txt {
+}
+.top-sign-up-txt h3,
+.top-log-in-txt h3 {
+  font-size: 2.6rem;
+  margin-bottom: 1.6rem;
+}
+.top-sign-up-txt p,
+.top-log-in-txt p {
+  font-size: 1.2rem;
+  color: #676666;
+  margin-bottom: 5.8rem;
+}
+.sign-up-form,
+.log-in-form {
+  display: flex;
+  flex-direction: column;
+
+  margin: 0 auto;
+}
+.sign-up-form label,
+.log-in-form label {
+  margin-bottom: 1.2rem;
+  font-size: 1.6rem;
+}
+.sign-up-form input,
+.log-in-form input {
+  margin-bottom: 2.4rem;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #a0a0a0;
+  padding: 1rem 0;
+  font-size: 1.4rem;
+}
+.sign-up-form input::placeholder,
+.log-in-form input::placeholder {
+  font-size: 1.4rem;
+}
+.btn-create-acc,
+.btn-log-in {
+  display: block;
+  margin-top: 3.2rem;
+  padding: 1.2rem 2.4rem;
+  font-size: 1.2rem;
+  outline: none;
+  border-radius: 8px;
+  border: none;
+  background-color: #f08b48;
+  color: #fff;
+}
+.log-in-link-container,
+.sign-up-link-container {
+  margin-top: 3.4rem;
+  text-align: center;
+  font-size: 1.2rem;
+}
+.log-in-link,
+.sign-up-link {
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+.log-in-link:hover,
+.sign-up-link:hover {
+  font-weight: 600;
+}
+
+/* ================================ */
+/* Log in styles */
+/* ================================ */
+
+.log-in-template {
+  /* display: none; */
+}
+.log-in-content {
+  margin: 0 auto;
+  width: 45rem;
+}
+.hidden {
+  display: none;
+}

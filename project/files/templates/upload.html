@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/upload.css" />
+    <script src="../js/upload-script.js"></script>
+    <script
+      defer
+      src="https://kit.fontawesome.com/f198221260.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>QuickyMeals</title>
+  </head>
+  <body>
+    <header class="header-container">
+      <nav class="nav-container">
+        <div class="icon-container"><p>QuickyMeals.com</p></div>
+        <div class="bar-container">
+          <input
+            type="text"
+            name="search-bar"
+            id="search-bar"
+            placeholder="Empieza a buscar recetas"
+          />
+          <div class="bar-icon">
+            <i class="fa-solid fa-magnifying-glass" style="color: #fbfdfc"></i>
+          </div>
+        </div>
+        <div class="links-container">
+          <ul>
+            <li>
+              <a href="">
+                <i class="fa-solid fa-chevron-down" style="color: #fbfdfc"></i>
+                <p>Categorias</p>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <p>Ver recetas</p>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <p>Aprende</p>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <i class="fa-solid fa-plus" style="color: #fbfdfc"></i>
+                <p>Subir receta</p>
+              </a>
+            </li>
+            <li>
+              <a href="" class="full-btn">
+                <p>Unete</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- <section class="section-upload-recipe">
+      <div class="upload-recipe-container">
+        <div class="top-upload-recipe-container">
+          <p>Sube una receta - <span class="step-txt">Comenzar</span></p>
+          <div class="steps-icon-container">
+            <div class="active-step-indicator"><p>1</p></div>
+            <div><p>2</p></div>
+            <div><p>3</p></div>
+            <div><p>4</p></div>
+          </div>
+        </div>
+        <div class="carousel-upload-container">
+          <div class="carousel-first-step hidden">
+            <h3>Empieza a subir tus recetas</h3>
+            <p>Estas a pocos pasos de ompartit tu talento al mundo</p>
+          </div>
+          <div class="carousel-second-step">
+            <form class="form-basic-info">
+              <label for="nombre-receta">Escribe el nombre de tu receta:</label>
+              <input type="text" id="nombre-receta" />
+              <label for=""></label>
+            </form>
+          </div>
+        </div>
+        <button class="btn-continue-upload">Continuar</button>
+      </div>
+    </section> -->
+
+    <!-- ================================================ -->
+    <!-- <section class="upload-recipe-welcome">
+      <div class="img-welcome-container">
+        <img src="../src/imgs/upload-recipe-img.jpg" alt="" />
+      </div>
+      <div class="upload-txt">
+        <h3>Subir Receta</h3>
+        <p>Estas a pocos pasos de compartir tu talento al mundo</p>
+        <button class="continue-to-upload">Continuar</button>
+      </div>
+    </section> -->
+    <!-- ================================================ -->
+
+    <section class="upload-recipe-section">
+      <div class="upload-recipe-container">
+        <p class="upload-recipe-txt">Subir receta</p>
+        <div class="upload-steps-container">
+          <div class="upload-step upload-setep-1">
+            <div class="upload-step-number step-active">
+              <p>1</p>
+            </div>
+            <p>Informacion general</p>
+            <i class="fa-solid fa-angle-right"></i>
+          </div>
+          <div class="upload-step upload-setep-2">
+            <div class="upload-step-number">
+              <p>2</p>
+            </div>
+            <p>Ingredientes</p>
+            <i class="fa-solid fa-angle-right"></i>
+          </div>
+          <div class="upload-step upload-setep-3">
+            <div class="upload-step-number">
+              <p>3</p>
+            </div>
+            <p>Pasos</p>
+            <i class="fa-solid fa-angle-right"></i>
+          </div>
+          <div class="upload-step upload-setep-4">
+            <div class="upload-step-number">
+              <p>4</p>
+            </div>
+            <p>Imagenes</p>
+            <i class="fa-solid fa-angle-right"></i>
+          </div>
+          <div class="upload-step upload-setep-5">
+            <div class="upload-step-number">
+              <p>5</p>
+            </div>
+            <p>Confirmar</p>
+          </div>
+        </div>
+        <div class="upload-forms-carousel-container">
+          <div class="form-top-description">
+            <h2>Paso 1 de 5 - Informacion general</h2>
+            <p>Rellena los siguientes campos para continuar</p>
+          </div>
+          <form class="form-upload-recipe">
+            <div class="all-slides-recipes">
+              <div class="upload-form upload-form-1">
+                <div class="recipe-name-container">
+                  <label for="recipe-name">Nombre de tu receta:</label>
+                  <input
+                    name="recipe-name"
+                    type="text"
+                    id="recipe-name"
+                    placeholder="Ej. Hotcackes con nutella"
+                  />
+                </div>
+                <div class="recipe-difficulty-container">
+                  <label for="recipe-difficulty"
+                    >Dificultad de tu receta:</label
+                  >
+                  <select name="recipe-difficulty" id="recipe-difficulty">
+                    <option value="easy">Facil</option>
+                    <option value="medium">Intermedio</option>
+                    <option value="hard">Dificil</option>
+                  </select>
+                </div>
+                <div class="recipe-time-container">
+                  <label for="recipe-time">Tiempo de preparacion (min):</label>
+                  <input
+                    type="text"
+                    name="recipe-time"
+                    id="recipe-time"
+                    placeholder="Ej. 120"
+                  />
+                </div>
+                <div class="recipe-portions-container">
+                  <label for="recipe-portion"
+                    >Porciones con tus ingredientes:</label
+                  >
+                  <input
+                    type="text"
+                    name="recipe-portion"
+                    id="recipe-portion"
+                  />
+                </div>
+
+                <div class="recipe-categories-container">
+                  <div class="categories-top-txt">
+                    <p>
+                      Selecciona las categorias a las que tu receta pertenece
+                    </p>
+                    <i class="fa-solid fa-chevron-down"></i>
+                  </div>
+                  <div class="categories-contaienr">
+                    <ul>
+                      <li>
+                        <label for="desayuno">Desayuno</label>
+                        <input
+                          class="categorie-checkbox"
+                          type="checkbox"
+                          name="desayuno"
+                          id="desayuno"
+                          value="Desayuno"
+                        />
+                      </li>
+                      <li>
+                        <label for="comida">Comida</label>
+                        <input
+                          class="categorie-checkbox"
+                          type="checkbox"
+                          name="comida"
+                          id="comida"
+                          value="Desayuno"
+                        />
+                      </li>
+                      <li>
+                        <label for="cena">Cena</label>
+                        <input
+                          class="categorie-checkbox"
+                          type="checkbox"
+                          name="cena"
+                          id="cena"
+                          value="Cena"
+                        />
+                      </li>
+                      <li>
+                        <label for="postre">Postre</label>
+                        <input
+                          class="categorie-checkbox"
+                          type="checkbox"
+                          name="postre"
+                          id="postre"
+                          value="Postre"
+                        />
+                      </li>
+                      <li>
+                        <label for="vegano">Vegano</label>
+                        <input
+                          class="categorie-checkbox"
+                          type="checkbox"
+                          name="vegano"
+                          id="vegano"
+                          value="Vegano"
+                        />
+                      </li>
+                      <li>
+                        <label for="comida">Vegetariano</label>
+                        <input
+                          class="categorie-checkbox"
+                          type="checkbox"
+                          name="vegetariano"
+                          id="vegetariano"
+                          value="Vegetariano"
+                        />
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="recipe-area-container">
+                  <p>Descripcion de la receta</p>
+                  <textarea
+                    name="textarea"
+                    id="textarea"
+                    cols="30"
+                    rows="5"
+                  ></textarea>
+                </div>
+              </div>
+              <div class="upload-form upload-form-2">
+                <div class="form-2-top-txt">
+                  <p class="top-txt-name">Nombre del ingrediente</p>
+                  <p class="top-txt-quantity">Cantidad del ingrediente</p>
+                  <p class="top-txt-type">Tipo de medida</p>
+                </div>
+                <div class="ingredients-form-container">
+                  <div class="row-ingredient-container" data-ingredientRow="1">
+                    <div class="row-remove" data-ingredientDelete="1">
+                      <i class="fa-regular fa-trash-can"></i>
+                    </div>
+
+                    <input
+                      type="text"
+                      name="ingredient-name-1"
+                      id="ingredient-name-1"
+                    />
+                    <input
+                      type="text"
+                      name="ingredient-quantity-1"
+                      id="ingredient-quantity-1"
+                    />
+                    <select name="ingredient-type-1" id="ingredient-type">
+                      <option value="l">Litro</option>
+                      <option value="ml">Mililitro</option>
+                      <option value="cups">Taza</option>
+                      <option value="portion">Porcion</option>
+                      <option value="gr">Gramo</option>
+                      <option value="kg">Kilogramo</option>
+                      <option value="spoon">Cucharada</option>
+                    </select>
+                  </div>
+
+                  <!-- Row divisor -->
+
+                  <div class="row-ingredient-container" data-ingredientRow="2">
+                    <div class="row-remove" data-ingredientDelete="2">
+                      <i class="fa-regular fa-trash-can"></i>
+                    </div>
+
+                    <input
+                      type="text"
+                      name="ingredient-name-2"
+                      id="ingredient-name-2"
+                    />
+                    <input
+                      type="text"
+                      name="ingredient-quantity-2"
+                      id="ingredient-quantity-2"
+                    />
+                    <select name="ingredient-type-2" id="ingredient-type">
+                      <option value="l">Litro</option>
+                      <option value="ml">Mililitro</option>
+                      <option value="cups">Taza</option>
+                      <option value="portion">Porcion</option>
+                      <option value="gr">Gramo</option>
+                      <option value="kg">Kilogramo</option>
+                      <option value="spoon">Cucharada</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="add-ingredient-btn">Agregar ingrediente</div>
+              </div>
+              <div class="upload-form upload-form-3">
+                <div class="form-3-top-txt">
+                  <p class="top-txt-step-number">Numero de paso</p>
+                  <p class="top-txt-step-description">Descripcion del paso</p>
+                </div>
+
+                <div class="steps-form-container">
+                  <div class="row-steps-container" data-stepRow="1">
+                    <div class="row-remove" data-stepDelete="1">
+                      <i class="fa-regular fa-trash-can"></i>
+                    </div>
+
+                    <p>Paso <span class="row-step-number">1</span></p>
+                    <textarea
+                      name="step-name-1"
+                      id="step-name-1"
+                      cols="30"
+                      rows="5"
+                    ></textarea>
+                  </div>
+                </div>
+                <div class="add-step-btn">Agregar paso</div>
+              </div>
+              <div class="upload-form upload-form-4">
+                <div class="txt-upload-imgs">
+                  Recomendacion de imagen (1800 X 1700)
+                </div>
+                <div class="imgs-cards-container">
+                  <div class="img-card img-card-1">
+                    <img src="../src/imgs/upload-solid.svg" alt="" />
+                    <label for="input-img-1">Subir imagen</label>
+                    <input
+                      type="file"
+                      name="input-img-1"
+                      id="input-img-1"
+                      accept="image/jpg, image/jpeg, image/png"
+                    />
+                  </div>
+                  <div class="img-card img-card-2">
+                    <img src="../src/imgs/upload-solid.svg" alt="" />
+                    <label for="input-img-1">Subir imagen</label>
+                    <input
+                      type="file"
+                      name="input-img-2"
+                      id="input-img-2"
+                      accept="image/jpg, image/jpeg, image/png"
+                    />
+                  </div>
+                  <div class="img-card img-card-3">
+                    <img src="../src/imgs/upload-solid.svg" alt="" />
+                    <label for="input-img-1">Subir imagen</label>
+                    <input
+                      type="file"
+                      name="input-img-3"
+                      id="input-img-3"
+                      accept="image/jpg, image/jpeg, image/png"
+                    />
+                  </div>
+                </div>
+                <div class="video-url-container">
+                  <label for="url-video"
+                    >Pega abajo la direccion URL de tu video subido a
+                    YouTube:</label
+                  >
+                  <input type="text" name="url-video" id="url-video" />
+                </div>
+              </div>
+              <div class="upload-form upload-form-5">
+                <p class="form-5-top-txt">
+                  A continuacion te presentamos un breve resumen de tu receta.
+                  Si estas de acuerdo con los datos ingresados da click en
+                  confirmar para subir tu receta.
+                </p>
+                <div class="form-5-summary">
+                  <h6>Titulo de tu receta:</h6>
+                  <p class="summary-title">pancakes</p>
+                  <h6>Dificultad de tu receta:</h6>
+                  <p class="summary-difficulty">Facil</p>
+                  <h6>Tiempo de preparacion de tu receta:</h6>
+                  <p class="summary-time">120 minutos</p>
+                  <h6>Porciones con tus ingredientes:</h6>
+                  <p class="summary-portion">6</p>
+                  <h6>Categorias a las que pertenece:</h6>
+                  <p class="summary-categories">Desayunos / Comida / Dulce</p>
+                </div>
+              </div>
+            </div>
+            <div class="btns-section-form">
+              <div class="previous-btn-recipe">Volver</div>
+              <div class="continue-btn-recipe">Continuar</div>
+              <button class="submit-btn-recipe" type="submit">Confirmar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

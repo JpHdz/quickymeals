@@ -1,0 +1,15 @@
+Nombre de la receta
+Duracion
+Dificultad
+Categorias
+Descripcion
+
+Porciones recomendadas
+Ingredientes
+
+Pasos a seguir
+
+
+Fotos
+Video
+
